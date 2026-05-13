@@ -14,3 +14,7 @@ notas = [nota1, nota2, nota3, nota4, nota5]
 
 for nota in notas:
     suma += nota
+
+promedio = suma / 5
+
+print("El promedio es:", promedio)
