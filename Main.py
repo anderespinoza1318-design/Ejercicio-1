@@ -1,29 +1,35 @@
+volver = ""
+
 print("Hola, Bienvenido.")
 
-nombre = input("Por Favor Ingrese su Nombre: ")
+while volver != "no":
 
-nota1 = float(input(nombre + ", Ingrese su primera nota por favor: "))
-nota2 = float(input("Vale ahora Ingrese su segunda nota: "))
-nota3 = float(input("Ingrese su tercera nota: "))
-nota4 = float(input("Ingrese su cuarta nota: "))
-nota5 = float(input("Ingrese su quinta nota: "))
+    nombre = input("Por Favor Ingrese su Nombre: ")
 
-suma = 0
+    nota1 = float(input(nombre + ", Ingrese su primera nota por favor: "))
+    nota2 = float(input("Vale ahora Ingrese su segunda nota: "))
+    nota3 = float(input("Ingrese su tercera nota: "))
+    nota4 = float(input("Ingrese su cuarta nota: "))
+    nota5 = float(input("Ingrese su quinta nota: "))
 
-notas = [nota1, nota2, nota3, nota4, nota5]
+    suma = 0
 
-for nota in notas:
-    suma += nota
+    notas = [nota1, nota2, nota3, nota4, nota5]
 
-promedio = suma / 5
+    for nota in notas:
+        suma += nota
 
-if promedio >= 4.5:
-    print("Excelente")
+    promedio = suma / 5
 
-elif promedio >= 3.0:
-    print("Aprobado")
+    if promedio >= 4.5:
+        print("Excelente")
 
-else:
-    print("Reprobado")
+    elif promedio >= 3.0:
+        print("Aprobado")
 
-print("El promedio de", nombre, "es de", promedio)
+    else:
+        print("Reprobado")
+
+    print("El promedio de", nombre, "es de", promedio)
+
+    volver = input("¿Desea evaluar a otro estudiante?: ")
