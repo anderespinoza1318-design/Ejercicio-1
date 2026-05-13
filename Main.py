@@ -17,4 +17,13 @@ for nota in notas:
 
 promedio = suma / 5
 
-print("El promedio es:", promedio)
+if promedio >= 4.5:
+    print("Excelente")
+
+elif promedio >= 3.0:
+    print("Aprobado")
+
+else:
+    print("Reprobado")
+
+print("El promedio de", nombre, "es de", promedio)
